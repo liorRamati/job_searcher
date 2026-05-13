@@ -1,0 +1,13 @@
+{
+  "id": "greenhouse:1001",
+  "title": "Data Scientist",
+  "company": "TestCo",
+  "url": "https://boards.greenhouse.io/testco/jobs/1001",
+  "location_raw": "Tel Aviv, Israel",
+  "posted_date": "2026-04-19T10:00:00+00:00",
+  "description_html": "<div><p>We are looking for a Data Scientist to join our team in Tel Aviv. Work with Python, PyTorch, and SQL on real-world ML problems. Hybrid work model available.</p><h3>Requirements</h3><ul><li>3+ years experience</li><li>Python and PyTorch</li><li>SQL proficiency</li></ul></div>",
+  "source": "greenhouse",
+  "raw_payload": { "id": 1001 },
+  "detected_language": "en",
+  "translated": false
+}

@@ -1,0 +1,99 @@
+# Master keyword list for tech-stack matching in the scorer.
+#
+# Structure: canonical_skill_name: [list of search terms]
+#   - Keys must match the user's skill names (case-insensitive).
+#   - Values are substrings searched case-insensitively in the job description.
+#   - If a user skill has no entry here, the skill name itself is the only search term.
+#
+# Add aliases generously — better to over-match than to miss a skill the user knows.
+
+# ── Programming languages ──────────────────────────────────────────────────────
+
+python:
+  - python
+
+sql:
+  - sql
+  - mysql
+  - postgresql
+  - postgres
+  - sqlite
+  # NoSQL counts: a SQL user usually adapts quickly to document / key-value stores
+  - nosql
+  - mongodb
+
+# ── ML / data-science frameworks ───────────────────────────────────────────────
+
+pytorch:
+  - pytorch
+  # PyTorch is almost universally imported as "torch"
+  - torch
+
+pandas:
+  - pandas
+
+numpy:
+  - numpy
+  # "np" alone is too short to search safely (too many false matches in prose)
+
+scikit-learn:
+  - scikit-learn
+  - sklearn
+  - scikit learn
+
+# ── Dev tools ──────────────────────────────────────────────────────────────────
+
+git:
+  - git
+  - github
+  - gitlab
+  - version control
+  - vcs
+
+docker:
+  - docker
+  - dockerfile
+  # Kubernetes usually implies Docker knowledge
+  - kubernetes
+  - k8s
+  - container
+
+jupyter:
+  - jupyter
+  - notebook
+  - jupyter lab
+  - jupyterlab
+
+# ── Domain / knowledge area keywords ──────────────────────────────────────────
+
+machine learning:
+  - machine learning
+  - deep learning
+  - neural network
+  - ml model
+  - ai model
+  - reinforcement learning
+
+data science:
+  - data science
+  - data analysis
+  - data analytics
+  - analytics
+  - statistical analysis
+  - statistics
+
+computer vision:
+  - computer vision
+  - image processing
+  - image recognition
+  - object detection
+  - image segmentation
+  - opencv
+  - cv model
+
+algorithm development:
+  - algorithm
+  - optimization
+  - signal processing
+  - data structures
+  - numerical methods

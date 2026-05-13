@@ -1,0 +1,61 @@
+excluded_titles:
+  - "Team Lead"
+  - "Manager"
+  - "Director"
+  - "VP"
+  - "Head of"
+
+excluded_title_keywords:
+  - "frontend"
+  - "front-end"
+  - "full-stack"
+  - "full stack"
+  - "ui engineer"
+  - "ui developer"
+  - "web developer"
+excluded_keywords:
+  - "FPGA"
+  - "Embedded"
+  - "PHP"
+dominant_tech_stacks:
+  - "name": "automation/support"
+    "title_keywords":
+      - "support engineer"
+      - "automation engineer"
+      - "IT"
+  - "name": "Frontend/JS"
+    "title_keywords":
+      - "react developer"
+      - "react engineer"
+      - "angular developer"
+      - "angular engineer"
+      - "vue developer"
+      - "vue engineer"
+      - "javascript developer"
+      - "javascript engineer"
+      - "typescript developer"
+      - "typescript engineer"
+    "body_keywords":
+      - "react"
+      - "angular"
+      - "vue"
+      - "typescript"
+      - "javascript"
+      - "html"
+      - "css"
+      - "frontend"
+      - "front-end"
+    "body_threshold": 4
+  - "name": "C/C++"
+    "title_keywords":
+      - "c++ developer"
+      - "c++ engineer"
+      - "c/c++ developer"
+      - "c/c++ engineer"
+      - "systems programmer"
+    "body_keywords":
+      - "c++"
+      - "c/c++"
+    "body_threshold": 4
+
+min_years_required_max: 7

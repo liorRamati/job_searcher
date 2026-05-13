@@ -1,0 +1,258 @@
+companies:
+# ✅ WORKING - Greenhouse API (verified)
+- name: Taboola
+  ats: greenhouse
+  slug: taboola
+  enabled: true
+- name: AppsFlyer
+  ats: greenhouse
+  slug: appsflyer
+  enabled: true
+- name: SimilarWeb
+  ats: greenhouse
+  slug: similarweb
+  enabled: true
+- name: JFrog
+  ats: greenhouse
+  slug: jfrog
+  enabled: true
+- name: Via Transportation
+  ats: greenhouse
+  slug: via
+  enabled: true
+- name: Lightricks
+  ats: greenhouse
+  slug: lightricks
+  enabled: true
+- name: Cato Networks
+  ats: greenhouse
+  slug: catonetworks
+  enabled: true
+- name: Transmit Security
+  ats: greenhouse
+  slug: transmitsecurity
+  enabled: true
+- name: Playtika
+  ats: greenhouse
+  slug: playtikaltd
+  enabled: true
+- name: NICE Systems
+  ats: greenhouse
+  slug: nice
+  enabled: true
+- name: Unity
+  ats: greenhouse
+  slug: unity3d
+  enabled: true
+- name: ExpressVPN
+  ats: greenhouse
+  slug: expressvpn
+  enabled: true
+- name: Teads
+  ats: greenhouse
+  slug: teads1
+  enabled: true
+
+# ✅ WORKING - Lever API
+- name: Cloudinary
+  ats: lever
+  slug: cloudinary
+  enabled: true
+- name: WalkMe
+  ats: lever
+  slug: walkme
+  enabled: true
+
+# ✅ WORKING - Workday REST API
+- name: Intel Israel
+  ats: workday
+  slug: null
+  career_url: https://intel.wd1.myworkdayjobs.com/External
+  enabled: true
+- name: PayPal Israel
+  ats: workday
+  slug: null
+  career_url: https://paypal.wd1.myworkdayjobs.com/jobs
+  enabled: true
+- name: Nvidia Israel
+  ats: workday
+  slug: null
+  career_url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
+  enabled: true
+- name: Snyk
+  ats: workday
+  slug: null
+  career_url: https://snyk.wd103.myworkdayjobs.com/External
+  enabled: true
+- name: Salesforce Israel
+  ats: workday
+  slug: null
+  career_url: "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=Tel+Aviv"
+  enabled: true
+
+# ✅ WORKING - Comeet API (slug = "company_uid:token")
+- name: Monday.com
+  ats: comeet
+  slug: "41.00B:14B52C52C67790D3E1296BA37C20"
+  enabled: true
+- name: eToro
+  ats: comeet
+  slug: "41.009:14952452466D3DB7B61495240B91"
+  enabled: true
+- name: Panorays
+  ats: comeet
+  slug: "97.00D:79D2DAE1E7479D1E742DAE3CE802DAE1E74"
+  enabled: true
+- name: Kaltura
+  ats: comeet
+  slug: "E2.00D:2EDEA12ED017688C7147B1A555DA2ED"
+  enabled: true
+- name: Cellebrite
+  ats: comeet
+  slug: "C3.00F:3CF130BF3C0B6D16DA1AA9B6D130B16DA"
+  enabled: true
+
+# ✅ WORKING - Mobileye custom HTML scraper
+- name: Mobileye
+  ats: mobileye
+  slug: null
+  career_url: https://careers.mobileye.com/jobs
+  enabled: true
+
+# ✅ WORKING - Varonis custom REST API
+- name: Varonis
+  ats: varonis
+  slug: null
+  career_url: https://careers.varonis.com/api/getRequisitions
+  enabled: true
+
+# ✅ WORKING - SmartRecruiters API
+- name: Armis
+  ats: smartrecruiters
+  slug: Armis
+  enabled: true
+- name: CyberArk
+  ats: smartrecruiters
+  slug: Cyberark1
+  enabled: true
+
+# ✅ WORKING - Eightfold.ai pcsx API (career_url = "base_url|domain|location")
+- name: Qualcomm Israel
+  ats: eightfold
+  slug: null
+  career_url: "https://careers.qualcomm.com|qualcomm.com|Israel"
+  enabled: true
+- name: Microsoft Israel
+  ats: eightfold
+  slug: null
+  career_url: "https://apply.careers.microsoft.com|microsoft.com|Israel"
+  enabled: true
+- name: Amdocs
+  ats: eightfold
+  slug: null
+  career_url: "https://jobs.amdocs.com|amdocs.com|Israel"
+  enabled: true
+
+# ✅ WORKING - Gem.com job board API
+- name: BigPanda
+  ats: gem
+  slug: bigpanda
+  career_url: null
+  enabled: true
+
+# ✅ WORKING - SmartRecruiters with country=il filter (career_url = ISO country code)
+- name: Wix
+  ats: smartrecruiters
+  slug: Wix2
+  career_url: "il"
+  enabled: true
+
+# ✅ WORKING - Allot custom WordPress AJAX scraper (currently 0 Israel jobs)
+- name: Allot
+  ats: allot
+  slug: null
+  career_url: https://www.allot.com/careers/search/
+  enabled: false
+  notes: 'WordPress AJAX endpoint (wp-admin/admin-ajax.php?action=get_positions) works but Allot currently has 0 Israel jobs; scraper ready, re-enable when Israel positions appear'
+
+# ✅ WORKING - Check Point (Playwright for AWS WAF) + PhenomPeople (Thales, Cisco)
+- name: Check Point
+  ats: checkpoint
+  slug: null
+  career_url: https://careers.checkpoint.com/
+  enabled: true
+- name: Radware
+  ats: radware
+  slug: null
+  career_url: https://radware.taleo.net/careersection/ex/joblist.ftl
+  enabled: true
+# ✅ WORKING - Tower Semiconductor custom HTML scraper
+- name: Tower Semiconductor
+  ats: towersemi
+  slug: null
+  career_url: https://careers.towersemi.com/our-loactions/israel/
+  enabled: true
+
+- name: Cisco Israel
+  ats: phenom
+  slug: null
+  career_url: "https://careers.cisco.com|page4|CISCISGLOBAL"
+  enabled: true
+
+# ✅ WORKING - Custom HTML/JSON scrapers for major portals
+- name: Google Israel
+  ats: google
+  slug: null
+  career_url: https://careers.google.com/jobs/results/?location=Israel
+  enabled: true
+- name: Amazon Israel
+  ats: amazon
+  slug: null
+  career_url: https://www.amazon.jobs/en/locations/israel
+  enabled: true
+- name: Apple Israel
+  ats: apple
+  slug: null
+  career_url: https://jobs.apple.com/en-il/search
+  enabled: true
+- name: IBM Israel
+  ats: ibm
+  slug: null
+  career_url: https://www.ibm.com/careers/search?field_keyword_05[]=Israel
+  enabled: true
+- name: Meta Israel
+  ats: meta
+  slug: null
+  career_url: https://www.metacareers.com/jobs?offices[0]=Tel%20Aviv%2C%20Israel
+  enabled: true
+- name: Elbit Systems
+  ats: elbit
+  slug: null
+  career_url: https://elbitsystemscareer.com/jobs/
+  enabled: true
+
+- name: Thales Israel
+  ats: phenom
+  slug: null
+  career_url: "https://careers.thalesgroup.com|page18"
+  enabled: true
+
+- name: Akamai Israel
+  ats: akamai
+  slug: null
+  career_url: https://jobs.akamai.com/en/sites/CX_1
+  enabled: true
+
+# ❌ ATS NOT FOUND / NO ACCESSIBLE API
+- name: Fiverr
+  ats: custom
+  slug: null
+  career_url: https://www.fiverr.com/jobs/teams
+  enabled: false
+  notes: 'PerimeterX bot protection (PXCR100) blocks Playwright; static HTML has no job data; no accessible public job API found'
+- name: Rafael
+  ats: custom
+  slug: null
+  career_url: https://career.rafael.co.il/search/
+  enabled: false
+  notes: 'career.rafael.co.il is WordPress + Radware Bot Manager — all dynamic paths (/, /search/, /api/, /wp-json/) return HTTP 247; headless Playwright also blocked; static /wp-content/ accessible but no job data there'

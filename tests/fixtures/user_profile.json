@@ -1,0 +1,135 @@
+{
+  "name": "Lior Ramati",
+  "email": "lior.ramati1@gmail.com",
+  "phone": "054-808-2074",
+  "seniority": "mid",
+  "years_of_experience": 3,
+  "target_titles": [
+    "Software Engineer",
+    "Algorithm Engineer",
+    "Machine Learning Engineer",
+    "Data Scientist",
+    "Computer Vision Engineer"
+  ],
+  "skills": {
+    "languages": [
+      "python",
+      "java",
+      "SQL",
+      "c#"
+    ],
+    "frameworks": [
+      "Pandas",
+      "PyTorch",
+      "OpenCV",
+      "Nevergrad",
+      "Pytesseract",
+      "Matplotlib",
+      "Django"
+    ],
+    "tools": [
+      "PostgreSQL",
+      "Git",
+      "openpyxl",
+      "Python-docx"
+    ],
+    "domains": [
+      "simulation",
+      "optimization",
+      "machine learning",
+      "reinforcement learning",
+      "computer vision",
+      "backend development"
+    ]
+  },
+  "education": [
+    {
+      "degree": "MSc",
+      "field": "Computer Science",
+      "institution": "Hadassah Academic College Jerusalem",
+      "year": 2022
+    },
+    {
+      "degree": "BSc",
+      "field": "Mathematics and Computer Science",
+      "institution": "The Hebrew University",
+      "year": 2019
+    }
+  ],
+  "previous_titles": [
+    "Software & Algorithm Engineer",
+    "Algorithm Consultant"
+  ],
+  "languages": [
+    "Hebrew",
+    "English"
+  ],
+  "hard_disqualifiers": {
+    "excluded_titles": [
+      "Team Lead",
+      "Manager",
+      "Director",
+      "VP",
+      "Head of"
+    ],
+    "excluded_title_keywords": [
+      "frontend",
+      "front-end",
+      "full-stack",
+      "full stack",
+      "ui engineer",
+      "ui developer",
+      "web developer"
+    ],
+    "excluded_keywords": [
+      "FPGA",
+      "Embedded",
+      "PHP"
+    ],
+    "dominant_tech_stacks": [
+      {
+        "name": "Frontend/JS",
+        "title_keywords": [
+          "react developer",
+          "react engineer",
+          "angular developer",
+          "angular engineer",
+          "vue developer",
+          "vue engineer",
+          "javascript developer",
+          "javascript engineer",
+          "typescript developer",
+          "typescript engineer"
+        ],
+        "body_keywords": [
+          "react",
+          "angular",
+          "vue",
+          "typescript",
+          "javascript",
+          "html",
+          "css",
+          "frontend",
+          "front-end"
+        ],
+        "body_threshold": 4
+      },
+      {
+        "name": "C/C++",
+        "title_keywords": [
+          "c++ developer",
+          "c++ engineer",
+          "c/c++ developer",
+          "c/c++ engineer",
+          "systems programmer"
+        ],
+        "body_keywords": [
+          "c++",
+          "c/c++"
+        ],
+        "body_threshold": 4
+      }
+    ],
+    "min_years_required_max": 7
+  }
+}

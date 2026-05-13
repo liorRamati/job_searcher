@@ -1,0 +1,65 @@
+{
+  "jobs": [
+    {
+      "id": 1001,
+      "title": "Data Scientist",
+      "location": { "name": "Tel Aviv, Israel" },
+      "updated_at": "2026-04-19T10:00:00.000Z",
+      "absolute_url": "https://boards.greenhouse.io/testco/jobs/1001",
+      "content": "<div><h3>About the role</h3><p>We are looking for a Data Scientist to join our team in Tel Aviv. You will work on machine learning models using Python and PyTorch.</p><h3>Requirements</h3><ul><li>3+ years experience in data science</li><li>Strong Python skills</li><li>Experience with PyTorch or TensorFlow</li><li>SQL proficiency</li></ul></div>",
+      "departments": [{ "id": 1, "name": "Data" }],
+      "offices": [{ "id": 10, "name": "Tel Aviv" }]
+    },
+    {
+      "id": 1002,
+      "title": "Algorithm Developer",
+      "location": { "name": "Herzliya, Israel" },
+      "updated_at": "2026-04-20T08:30:00.000Z",
+      "absolute_url": "https://boards.greenhouse.io/testco/jobs/1002",
+      "content": "<div><h3>About the role</h3><p>Develop cutting-edge algorithms for our computer vision platform. Hybrid work model - 3 days in office.</p><h3>Requirements</h3><ul><li>MSc/PhD in Computer Science or related field</li><li>Experience with Python and NumPy</li><li>Background in optimization or signal processing</li></ul></div>",
+      "departments": [{ "id": 2, "name": "R&D" }],
+      "offices": [{ "id": 11, "name": "Herzliya" }]
+    },
+    {
+      "id": 1003,
+      "title": "Machine Learning Engineer",
+      "location": { "name": "Remote" },
+      "updated_at": "2026-04-21T12:00:00.000Z",
+      "absolute_url": "https://boards.greenhouse.io/testco/jobs/1003",
+      "content": "<div><p>Fully remote position. Work from anywhere in the world. We are building distributed ML infrastructure.</p></div>",
+      "departments": [{ "id": 2, "name": "Engineering" }],
+      "offices": []
+    },
+    {
+      "id": 1004,
+      "title": "Data Engineer",
+      "location": { "name": "Haifa, Israel" },
+      "updated_at": "2026-04-22T09:00:00.000Z",
+      "absolute_url": "https://boards.greenhouse.io/testco/jobs/1004",
+      "content": "<div><p>Join our data engineering team in Haifa. Work on large-scale data pipelines using Python and SQL.</p></div>",
+      "departments": [{ "id": 3, "name": "Data Engineering" }],
+      "offices": [{ "id": 12, "name": "Haifa" }]
+    },
+    {
+      "id": 1005,
+      "title": "Senior Data Scientist",
+      "location": { "name": "Tel Aviv, Israel" },
+      "updated_at": "2026-03-05T10:00:00.000Z",
+      "absolute_url": "https://boards.greenhouse.io/testco/jobs/1005",
+      "content": "<div><p>Old posting — should be filtered by max_age_days=30 (posted 50 days ago).</p></div>",
+      "departments": [{ "id": 1, "name": "Data" }],
+      "offices": [{ "id": 10, "name": "Tel Aviv" }]
+    },
+    {
+      "id": 1006,
+      "title": "Research Engineer",
+      "location": { "name": "Israel" },
+      "updated_at": "2026-04-18T14:00:00.000Z",
+      "absolute_url": "https://boards.greenhouse.io/testco/jobs/1006",
+      "content": "<div><p>Location TBD within Israel. Flexible and hybrid work arrangements available.</p></div>",
+      "departments": [{ "id": 2, "name": "Research" }],
+      "offices": []
+    }
+  ],
+  "meta": { "total": 6 }
+}

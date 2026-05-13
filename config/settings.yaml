@@ -1,0 +1,76 @@
+agent:
+  score_threshold: 60          # minimum score (0-100) to generate a cover letter
+  profile_path: config/profile.json
+
+search:
+  max_job_age_days: 7
+  job_titles:
+    - "algorithm developer"
+    - "data scientist"
+    - "data engineer"
+    - "ML engineer"
+    - "machine learning engineer"
+    - "research engineer"
+    - "applied scientist"
+    - "software engineer - data"
+
+google_sheets:
+  credentials_file: config/google_credentials.json
+  spreadsheet_id: YOUR_SPREADSHEET_ID   # override with GOOGLE_SPREADSHEET_ID env var
+  sheet_name: job_searcher
+
+scraping:
+  playwright_headless: true
+  request_delay_seconds: 1.0
+  max_retries: 3
+  timeout_seconds: 30
+
+llm:
+  provider: lm_studio           # claude | lm_studio
+  claude:
+    model: claude-sonnet-4-6
+    api_key_env: ANTHROPIC_API_KEY
+    max_tokens: 1500
+  lm_studio:
+    base_url: http://localhost:1234/v1
+    model: gemma-4-26b-a4b-it
+    max_tokens: 1500
+
+llm_filter:
+  enabled: false               # set to true to enable by default
+  batch_size: 5                # jobs per LLM call
+  min_score_before_llm: 30     # only send jobs above this score to LLM
+
+disqualifier:
+  disqualify_remote: True  # boolean for disqualifying remote jobs
+
+scoring:
+  # Keywords that must appear in a job title for it to earn any title-match points
+  # (strict mode only — skipped when --llm-filter is active).
+  # Change this list to match the domain you are searching in.
+  title_required_keywords:
+    - "data"
+    - "ml"
+    - "machine learning"
+    - "algorithm"
+    - "scientist"
+    - "research"
+    - "ai"
+    - "artificial intelligence"
+
+  # Minimum fuzzy-match score (0–100) between a job title and the user's target
+  # titles to earn any title points. Lower values accept more distant matches.
+  title_min_threshold: 50
+
+  # Number of distinct skill matches needed to earn the maximum tech-stack score.
+  # Set to roughly half the total number of skills in your profile — a job listing
+  # won't name every skill you have, but N matches is a strong compatibility signal.
+  tech_full_match_count: 6
+
+logging:
+  level: INFO
+  log_dir: logs/
+
+schedule:
+  enabled: false           # set to true to enable scheduler
+  cron: "0 8 * * 1-5"    # 08:00 Monday–Friday (minute hour day month day_of_week)
