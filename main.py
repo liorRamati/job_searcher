@@ -185,6 +185,8 @@ def main(argv: Optional[list[str]] = None) -> None:
     from scrapers.meta import MetaScraper
     from scrapers.mobileye import MobileyeScraper
     from scrapers.phenom import PhenomScraper
+    from scrapers.paloalto import PaloAltoScraper
+    from scrapers.successfactors import SuccessFactorsScraper
     from scrapers.radware import RadwareScraper
     from scrapers.smartrecruiters import SmartRecruitersScraper
     from scrapers.towersemi import TowerSemiScraper
@@ -267,6 +269,8 @@ def main(argv: Optional[list[str]] = None) -> None:
             "akamai": AkamaiScraper,
             "radware": RadwareScraper,
             "checkpoint": CheckPointScraper,
+            "paloalto": PaloAltoScraper,
+            "successfactors": SuccessFactorsScraper,
             "custom": CustomScraper,
         }
         if ats in scrapers:

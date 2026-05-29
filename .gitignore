@@ -1,0 +1,13 @@
+# Project exclude paths
+/.venv/
+/.cache/
+/.claude/
+/logs/
+.coverage
+PLAN.md
+.env
+test.py
+/config/google_credentials.json
+/config/locations.yaml
+/config/profile.json
+/resume/Lior ramati 2026.pdf

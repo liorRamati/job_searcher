@@ -159,7 +159,7 @@ class SmartRecruitersScraper(BaseScraper):
                 })
                 all_jobs.append(job)
 
-            total = data.get("total", 0)
+            total = data.get("total") or data.get("totalFound", 0)
             has_more = offset + len(raw_jobs) < total
             offset += len(raw_jobs)
 

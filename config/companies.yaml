@@ -243,13 +243,129 @@ companies:
   career_url: https://jobs.akamai.com/en/sites/CX_1
   enabled: true
 
-# ❌ ATS NOT FOUND / NO ACCESSIBLE API
+# ✅ WORKING - Greenhouse API (Israeli-founded companies)
+- name: Gong
+  ats: greenhouse
+  slug: gongio
+  enabled: true
+- name: Tipalti
+  ats: greenhouse
+  slug: tipaltisolutions
+  enabled: true
+- name: Orca Security
+  ats: greenhouse
+  slug: orcasecurity
+  enabled: true
+- name: Axonius
+  ats: greenhouse
+  slug: axonius
+  enabled: true
+- name: Outbrain
+  ats: greenhouse
+  slug: outbraininc
+  enabled: false
+  notes: 'Merged with Teads (Feb 2025); Greenhouse board remains active for Israel hiring'
+
+# ✅ WORKING - Workday REST API (global companies with Israel R&D)
+- name: Broadcom Israel
+  ats: workday
+  slug: null
+  career_url: https://broadcom.wd1.myworkdayjobs.com/External_Career
+  enabled: false
+- name: CrowdStrike Israel
+  ats: workday
+  slug: null
+  career_url: https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers
+  enabled: true
+- name: HPE Israel
+  ats: workday
+  slug: null
+  career_url: https://hpe.wd5.myworkdayjobs.com/Jobsathpe
+  enabled: true
+- name: Zscaler Israel
+  ats: greenhouse
+  slug: zscaler
+  enabled: true
+  notes: 'Uses Greenhouse (not Workday); wd5.myworkdayjobs.com/myZscaler redirects to Workday maintenance page; verified Greenhouse slug "zscaler" with Israel jobs May 2026'
+
+# ✅ WORKING - SuccessFactors Career Portal HTML scraper
+- name: NetApp Israel
+  ats: successfactors
+  slug: null
+  career_url: https://jobs.netapp.com/search/restapi?searchby=location&q=Israel
+  enabled: true
+  notes: 'Uses SAP SuccessFactors Career Portal at jobs.netapp.com; eightfold.ai/api/pcsx requires auth (403); SF search endpoint returns parseable HTML'
+
+# ✅ WORKING - TalentBrew custom scraper
+- name: Palo Alto Networks Israel
+  ats: paloalto
+  slug: null
+  career_url: https://jobs.paloaltonetworks.com
+  enabled: true
+
 - name: Fiverr
   ats: custom
   slug: null
   career_url: https://www.fiverr.com/jobs/teams
   enabled: false
   notes: 'PerimeterX bot protection (PXCR100) blocks Playwright; static HTML has no job data; no accessible public job API found'
+
+# ✅ NEW - Greenhouse API (Israeli cybersecurity / SaaS with Israel R&D)
+- name: SentinelOne
+  ats: greenhouse
+  slug: sentinellabs
+  enabled: true
+  notes: 'Israeli-founded cybersecurity unicorn (XDR/EDR); large Tel Aviv R&D; 14 Israel jobs verified May 2026'
+- name: Yotpo
+  ats: greenhouse
+  slug: yotpo
+  enabled: true
+  notes: 'Israeli e-commerce analytics (loyalty, reviews, SMS); primary R&D in Tel Aviv; 13 Israel jobs verified May 2026'
+- name: Forter
+  ats: greenhouse
+  slug: forter
+  enabled: true
+  notes: 'Israeli fraud-prevention / identity platform; R&D hub in Tel Aviv; 14 Israel jobs verified May 2026'
+- name: Perion Network
+  ats: greenhouse
+  slug: perionnetworkltd
+  enabled: true
+  notes: 'Israeli ad-tech company (HQ Holon); R&D in Israel; 6 Israel jobs verified May 2026'
+- name: Vonage
+  ats: greenhouse
+  slug: vonage
+  enabled: true
+  notes: 'Cloud-communications (Ericsson subsidiary); former NMS/Nexmo Israel R&D center; 2 Israel jobs verified May 2026 (fluctuates)'
+- name: Sisense
+  ats: greenhouse
+  slug: sisense
+  enabled: true
+  notes: 'Israeli BI/analytics platform (founded Tel Aviv 2004); R&D center in Ramat Gan; 2 Israel jobs verified May 2026 (fluctuates)'
+
+# ✅ NEW - Comeet API (Israeli-founded companies)
+- name: XM Cyber
+  ats: comeet
+  slug: "15.005:51519692393A2A1454A2A145423930F3F"
+  enabled: true
+  notes: 'Israeli APT-simulation / attack-path management platform; HQ Tel Aviv; 9 Israel jobs verified May 2026'
+- name: Rapyd
+  ats: comeet
+  slug: "73.00E:37E11766FC1F6E11761F6E6FC01BF06FC"
+  enabled: true
+  notes: 'Israeli fintech (Fintech-as-a-Service); large Israel site (~400 employees); 10 Israel jobs verified May 2026'
+- name: Lusha
+  ats: comeet
+  slug: "73.00B:37B11676F61F53DEC6F606F61BD8185D"
+  enabled: true
+  notes: 'Israeli B2B sales intelligence platform; HQ Tel Aviv; 13 Israel jobs verified May 2026'
+
+# ✅ NEW - SmartRecruiters API (global companies with Israel R&D hub)
+- name: ServiceNow
+  ats: smartrecruiters
+  slug: servicenow
+  career_url: "il"
+  enabled: true
+  notes: 'Enterprise cloud platform; Israel R&D hub (Security team, Petah Tikva); country=il filter needed; 4 Israel jobs verified May 2026'
 - name: Rafael
   ats: custom
   slug: null
